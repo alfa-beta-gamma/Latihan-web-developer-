@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset CSS */
+html, body, div, span, h1, h2, h3, p, ul, li, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* style */
+body {
+  font: 16px/28px arial, sans-serif;
+  background-color: #4B0082;
+}
+
+/* Video Background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.video-background {
+  background: url('fallback-image.jpg') no-repeat center/cover;
+}
+
+.container {
+  width: 80%;
+  max-width: 950px;
+  background-color: royalblue;
+  margin: 20px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background: rgba(20, 20, 50, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  -webkit-animation:fadeIn 1s ease-out;
+}
+
+img {
+  display: block;
+  margin: 50px auto;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blackhole {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 70px auto;
+  background: radial-gradient(circle,
+    #000000 0%,
+    #1a1a1a 20%,
+    #333333 40%,
+    #000000 60%,
+    #550000 75%,
+    transparent 100%
+  );
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  -webkit-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+  filter: drop-shadow(0 0 20px #ff0044);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.orbiter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: -120px;
+  animation: spin 3s linear infinite;
+}
+
+.btn-aktif {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #ff0044, #ff6b00);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 0, 68, 0.7);
+  transition: all 0.3s;
+}
+
+.btn-aktif:hover {
+  background: rgba(255, 0, 68, 0.9);
+  transform: scale(1.1);
+}
+
+.pembuka {
+  font-size: 50px;
+}
+
+.pembuka2 {
+  font-size: 50px;
+}
+
+.pembuka3 {
+  font-size: 50px;
+}
+
+.pembuka, .pembuka2, .pembuka3 {
+  font-family: 'orbitron', Sans-Serif;
+  color: #fff;
+  text-shadow: 0 0 5px #00f5ff;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.isi1, .isi2, .isi3 {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.glow {
+  filter: drop-shadow(0 0 10px #00f5ff);
+  transition: all 0.5s;
+}
+
+.glow:hover {
+  filter: drop-shadow(0 0 20px #ff0044);
+}
+
+li {
+  color: #fff;
+}
+
+.bawah {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.saran {
+  color: #aaa;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  .pembuka, .pembuka2, .pembuka3 {
+    font-size: 1.8rem;
+  }
+}
