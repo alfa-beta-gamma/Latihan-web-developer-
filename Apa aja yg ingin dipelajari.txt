@@ -1,11 +1,8 @@
 1.belajar coding
 ^ belajar bikin game
 ^ belajar soal ai engineer
-
 2.belajar gambar
 ^ belajar bikin gambar pixel
-
-
 2.belajar gambar
 ^ belajar gambar pixel
 3.belajar gfx
