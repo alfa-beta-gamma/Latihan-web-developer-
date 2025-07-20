@@ -1,10 +1,21 @@
 1.belajar coding
 ^ belajar bikin game
+^ belajar soal ai engineer
+
 2.belajar gambar
 ^ belajar bikin gambar pixel
+
+
+2.belajar gambar
+^ belajar gambar pixel
 3.belajar gfx
 4.ngetranslate komik
 6.belajar bahasa
+^ belajar bahasa jepang
 ^ belajar bahasa Inggris 
 7.belajar alat musik
 ^ belajar kalimba
+^ belajar biola
+ 
+
+
